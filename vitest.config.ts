@@ -5,6 +5,10 @@ import { getViteConfig } from "astro/config";
 // https://vitest.dev/config/
 export default getViteConfig({
   test: {
-    //
+    poolOptions: {
+      threads: {
+        singleThread: true,
+      },
+    },
   },
 });
